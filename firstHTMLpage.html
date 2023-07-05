@@ -1,11 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div> Welcome </div>
-</body>
-</html>
+    <!DOCTYPE html> <!-- HTML5 document should start with a document type declaration -->   
+    <html lang="en"><!-- HTML document Starts, and language is set to default english -->
+    <head><!-- It is a container where you keep all of your details about the web page -->
+        <!--
+            It typically contains:
+                - Title
+                - Character set
+                - styles (CSS)
+                - scripts (JS)
+                - links (external Links), and other meta informations.
+        -->
+            
+        <meta charset="UTF-8">  <!-- Defining the web page's Character set -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Default device screen size -->
+        <title>First HTML Page</title>
+    </head>
+    <body><!-- It is a container where the Code is written which will be displayed on the screen -->
+
+        <p>Welcome to my first HTML page.</p>
+        <h1>Heading 1</h1>
+        <h2>Heading 2 </h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <!-- Elements -->
+        <!--
+            An element is the whole content which comes inside a startinga and an ending tag
+
+                Syntax:
+                    <starting_tag>
+                        Content
+                    <ending_tag>
+
+                Example:
+                    <p>
+                        Welcome to my first HTML page.
+                    </p>
+        -->
+
+        <!-- Attributes -->
+        <!--
+            - Elements attributes are stored
+            - Additional information about the elements
+            - Most of the attributes will be having key-value pair
+        -->
+
+        <!-- Links/ Anchor Tag -->
+        <!-- An Anchor tag is represnted as <a> -->
+       <a href="https://www.edureka.co/" target="_blank">Link</a><!--
+        An anchor tag helps in creating links or clickable links
+            Attributes
+                - href="(value)"
+                    - href (key) helps in letting the compiler know there is a link to be represnted on a click.
+                    - (value) hold the link/ URL to be redirected upon
+                - target="_blank"
+                    - target helps as a key to reffer an action of opening the redirected page.
+                    - _blank as a value it helps the page open up in a new tab of the browser.
+    -->
+
+<!-- Images -->
+<!-- Relative URL : Source file from your own system -->
+<img src="./Edureka_logo.png" alt="Edureka's Logo" width="50" >
+        <hr>
+        
+            <img src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1687337328/img/site/edureka_1362740598.png" alt="Edureka_Logo" height="100">
+        
+
+        <!-- image as link -->
+        <a href="https://www.edureka.co/" target="_blank">
+            <img src="./Edureka_logo.png" alt="Edureka's Logo">
+
+        </a>
+        <hr>
+        <p><b>This</b> is a <strong>Wonderful</strong> <i>Day</i>
+        </p>
+        
+    </body>
+    </html>

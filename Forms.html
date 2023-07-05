@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <!-- Forms -->
+        <!--
+            - A form is uded to collect inputs.
+            - A form will contain different kinds of input elements.
+            - Atributes like "action" helps in defining the action to be performed on submission.
+        -->
+
+        <form action="./firstHTMLpage.html">
+
+            <label for="Fname">Full Name : </label>
+            <!-- 
+                - A label tag is uded to label a specific content
+                - Attribute :
+                    - "for" helps in identifing the label linked to.
+                        - It only connects with the id.
+            -->
+
+            <input type="text" id="Fname" name="name" value="" placeholder="John Doe">
+            <!--
+                - An input tag is used for inserting values/ data.
+                - An input tag is a self closing tag.
+                - Input attributes may vary depending upon the type of input provided.
+                - Attributes :
+                    - "type" helps in defining the type of data to be inserted.
+                    - "text" which is also the default type in input.
+                    - "id" helps in giving an unique name to the element.
+                    - "name" helps in giving a name value.
+                    - "value" helps in defining its content.
+                    - "placeholder" is an information provided in the input field which tells about what to be inserted or an example.
+            -->
+            <br><br>
+
+            <label for="pwd">Enter a Password : </label>
+            <input type="password" id="pwd" name="pwd">
+                <!--
+                    type - Password
+                        - Hides the content entered.
+                -->
+            
+            <br><br>
+
+            <label for="email">Enter your email id : </label>
+            <input type="email" id="email">
+                <!--
+                    type - Email
+                        - Accepts only email Ids.
+                -->
+            
+            <br><br>
+
+            <label for="age">Age : </label>
+            <input type="number" id="age" min="18" max="99" required>
+                <!--
+                    type - Number
+                        - Selecting a proper number only
+                        - Attribute
+                            - "min" for the minimum value to be selected
+                            - "max" for the maximum value to be selected
+                -->
+
+            <br><br>
+
+            <label for="dob">Date of Birth : </label>
+            <input type="date" id="dob" name="dob">
+                <!--
+                    type - Date
+                        - Selecting a proper date from the date-picker
+                -->
+            
+            
+            <br><br>
+
+            <label>Gender : </label>
+                <input type="radio" id="Male" name="gender" value="M">
+                <label for="Male">Male</label>
+
+                <input type="radio" id="Female" name="gender" value="F">
+                <label for="Female">Female</label>
+
+                <input type="radio" id="Others" name="gender"  value="O">
+                <label for="Others">Others</label>
+                <!--
+                    type - Radio
+                        - Selecting an option from the same group.
+                        - "name" must be similar to create a group.
+                        - If group is not created or name values are not defined or different the radio buttons will inact seperately.
+                        - "value" will be the data which be further processed on selection.
+                -->
+
+            <br><br>
+
+
+
+
+
+
+
+
+
+
+            
+
+            <label>Languages : </label>
+                <input type="checkbox" id="html" name="language" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="java" name="language" value="Java">
+                <label for="java">Java</label>
+
+                <input type="checkbox" id="node" name="language" value="NodeJs">
+                <label for="node">Node</label>
+                <!--
+                    type - Checkbox
+                        - Selecting one or more option from the group.
+                        - "name" must be similar to create a group.
+                        - If group is not created or name values are not defined or different the checkboxes will inact seperately.
+                        - "value" will be the data which be further processed on selection.
+                -->
+
+            
+            <br><br>
+
+            <label for="countries">Country : </label>
+            <select id="countries" name="country">
+                <option selected disabled>Select an option</option>
+                <option value="01">Egypt</option>
+                <option value="02">Australia</option>
+                <option value="03">South Africa</option>
+                <option value="04">India</option>
+            </select>
+
+                <!--
+                    - Select tag is used to select from the given options.
+                    - Similar to a drop-down box.
+                    - Option tags can be only used inside a select tag.
+                    - Attributes
+                        - "Disabled" helps in making the option can not be selected.
+                        - "Selected" helps in making a default select of an option.
+                -->
+            
+            <br><br>
+            
+            <!-- Buttons -->
+            <button>Submit</button>
+
+            <input type="submit" value="Input Submit">
+
+            <input type="reset" value="Input reset">
+
+            <!-- 
+                Submit Button
+                - Can be created through an Input tag as well as through a button tag also.
+                
+                Reset Button
+                - Helps in reseting the form.
+            -->
+            
+        </form>
+    </body>
+</html>

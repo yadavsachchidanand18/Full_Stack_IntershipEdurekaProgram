@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure of Data in HTML</title>
+    <style>
+        table,th,td {
+            border: 1px solid lightblue;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<p>Example of a Table</p>
+
+<table style="width: 100%;">
+    <thead>
+        <tr>
+            <th>
+             01
+            </th>
+            <th>
+              02
+            </th>
+            <th>
+             03
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              01
+            </td>
+            <td>
+             02
+            </td>
+            <td>
+             03
+            </td>
+        </tr>
+        <tr>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>07</td>
+            <td>08</td>
+            <td>09</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<hr>
+
+
+<!-- span's in a table 
+ rowspan- merging the row
+ colspan- merging the column
+
+-->
+<table style="width: 100%;">
+    <thead>
+        <tr>
+            <th>01</th>
+            <th>02</th>
+            <th>03</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Rowspan -->
+        <tr>
+          <td rowspan="2">Rowspan</td>
+          <td>04</td>
+          <td>05</td>
+        </tr>
+        <tr>
+            <td>06</td>
+            <td>07</td>
+            <!-- <td>08</td> -->
+
+        </tr>
+
+        <!-- colspan  -->
+        <tr>
+            <td colspan="2">Colspan</td>
+            <td>09</td>
+            <!-- <td>10</td> -->
+          
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+    </tbody>
+
+</table>
+
+<hr>
+
+<p>Lists</p>
+
+<p>Example of a <b>Ordered</b> List</p>
+
+<ol>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+</ol>
+
+<p>Example of an <b>Unordered</b> List</p>
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+</ul>
+
+<p>Example of a <b>Description</b> List</p>
+<dl>
+    <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+    <dt>CSS</dt>
+         <dd>Cascading style sheets</dd>
+    <dt>JS</dt>
+         <dd>JavaScript</dd>   
+</dl>
+
+ 
+    
+</body>
+</html>
